@@ -904,7 +904,38 @@
             background: transparent !important; /* Set product background to transparent */
             border: none !important; /* Remove border if necessary */
         }
-
+        /* Style checkout input fields with glassmorphism and visible text */
+        .ecwid-checkout input,
+        .ecwid-checkout textarea,
+        .ecwid-checkout select {
+            background: rgba(75, 0, 130, 0.15) !important; /* semi-transparent dark purple */
+            color: #ffffff !important; /* white text for visibility */
+            border: 1.5px solid rgba(160, 32, 240, 0.5) !important; /* purple border */
+            border-radius: 12px !important;
+            padding: 10px 15px !important;
+            font-size: 1rem !important;
+            font-family: 'Inter', sans-serif !important;
+            box-shadow: 0 0 10px rgba(106, 13, 173, 0.4) inset !important;
+            transition: border-color 0.3s ease;
+        }
+        
+        /* Placeholder text styling for better readability */
+        .ecwid-checkout input::placeholder,
+        .ecwid-checkout textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
+        
+        /* Focus state for inputs */
+        .ecwid-checkout input:focus,
+        .ecwid-checkout textarea:focus,
+        .ecwid-checkout select:focus {
+            outline: none !important;
+            border-color: #FFD700 !important; /* royal gold highlight */
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.7) !important;
+            background: rgba(106, 13, 173, 0.25) !important;
+            color: #fff !important;
+        }
+        
     </style>
 </head>
 <body>
