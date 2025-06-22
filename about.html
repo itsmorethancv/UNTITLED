@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Untitled Clothing</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(ellipse at top, #1a0a2e 0%, #16213e 25%, #0a0a0a 50%, #1a0a2e 75%, #0a0a0a 100%);
+            color: #fff;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .glass-card1 {
+            background: rgba(24, 0, 31, 0);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(111, 28, 122, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37), inset 0 1px 0 rgba(0, 0, 0, 0);
+            position: relative;
+            border-radius: 32px;
+            max-width: 600px;
+            margin: 40px 20px;
+            padding: 48px 36px;
+            z-index: 1;
+        }
+        .glass-card1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.014) 0%, rgba(255, 208, 65, 0.048) 100%);
+            border-radius: inherit;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .about-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 18px;
+            background: linear-gradient(135deg, #8B00FF, #DA70D6, #FFD700, #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+        }
+        .about-text {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.92);
+            margin-bottom: 18px;
+            text-align: center;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 24px;
+            color: #DA70D6;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 20px;
+            padding: 8px 22px;
+            background: rgba(138, 43, 226, 0.08);
+            border: 1px solid rgba(138, 43, 226, 0.18);
+            transition: all 0.3s;
+        }
+        .back-link:hover {
+            background: rgba(218, 112, 214, 0.18);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-card1" style="margin-bottom: 32px;">
+        <div class="about-title">About Untitled Clothing</div>
+        <div class="about-text">
+            <p><strong>Untitled Clothing</strong> is more than just a brand—it's a movement. Founded on the belief that fashion should empower individuality, we create unique, high-quality pieces that let you express your true self. Our collections blend modern streetwear with timeless elegance, using premium materials and sustainable practices.</p>
+        </div>
+    </div>
+    <div class="glass-card1" style="margin-bottom: 32px;">
+        <div class="about-title" style="font-size:1.7rem; margin-bottom:10px;">Inspired by Rap Culture</div>
+        <div class="about-text">
+            <p>Growing up, rap culture was more than music—it was a way of life. The boldness, the authenticity, and the unapologetic self-expression found in hip-hop inspired much of what Untitled Clothing stands for. Our designs pay homage to the icons, the street style, and the creative rebellion that shaped a generation.</p>
+            <p>From oversized silhouettes to statement graphics, every piece channels the energy and attitude of rap’s golden era, reimagined for today’s world.</p>
+        </div>
+    </div>
+    <div class="glass-card1">
+        <div class="about-title" style="font-size:1.7rem; margin-bottom:10px;">Our Mission</div>
+        <div class="about-text">
+            <p>We believe in inclusivity, creativity, and the freedom to be unapologetically you. Every item is designed with attention to detail, comfort, and versatility. Whether you're dressing up or keeping it casual, Untitled Clothing helps you make a statement without saying a word.</p>
+            <p>Join our community and discover clothing that’s as original as you are. Welcome to Untitled Clothing—where your story begins, and the possibilities are endless.</p>
+        </div>
+        <a class="back-link" href="UNTITLEDCLOTHING.html">&#8592; Back to Home</a>
+    </div>
+</body>
+</html>
